@@ -1,0 +1,56 @@
+*,*::before,*::after{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing:border-box;
+    text-align: justify;
+}
+
+html{
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    display: flex;
+    width: auto;
+    height:100%;
+    background:hsl(212, 45%, 89%);
+    align-items: center;
+    justify-content: center;
+}
+
+.wraper{
+    width: 25rem;
+    background: hsl(0, 0%, 100%);
+    border-radius: 20px;
+    min-height:64%;
+    box-shadow: 10px 10px hsl(212, 45%, 89%) 10px;
+}
+
+.content{
+    width: 85%;
+    padding: 1rem;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.bar{
+    width: 100%;
+    img{
+        width: 100%;
+        border-radius: 10px;
+        object-fit: contain;
+    }
+}
+
+.text-content{
+    h2{
+        text-align: center;
+        padding:.7rem 1rem;
+    }
+    p{
+        text-align: center;
+        padding:.5rem 1rem;
+    }
+}
