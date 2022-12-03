@@ -1,0 +1,142 @@
+/* flex box baby*/
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: "Karla", sans-serif;
+    font-weight: 400;
+}
+
+html,
+body {
+    height: 100%;
+    border: 100%;
+    background: hsl(204, 43%, 93%);
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: hsl(204, 43%, 93%);
+}
+
+.content {
+    border-radius: 5px;
+    padding: 1.5rem;
+    width: 85%;
+    /* border: 1px solid black; */
+    min-height: auto;
+
+    @media screen and (min-width: 950px) {
+        width: 75%;
+    }
+}
+
+.top {
+    /* border: 1px red solid; */
+    background: white;
+    border-radius: 10px 10px 0 0;
+    h1 {
+        padding: 1rem 0;
+        font-weight: 700;
+        font-size: 1.7rem;
+    }
+    h3 {
+        color: hsl(71, 73%, 54%);
+        padding: 1rem 0;
+    }
+    p {
+        padding: 1rem 0;
+        line-height: 1.5rem;
+        color: hsl(218, 22%, 67%);
+    }
+    @media screen and (min-width: 1280px) {
+        padding: 3rem;
+    }
+}
+
+.bottom {
+    .right {
+        background: hsl(179, 62%, 43%);
+        border-radius: 0 0 0 10px;
+        color: white;
+        /* border: 1px red solid; */
+        padding: 1rem 0;
+        h3 {
+            font-weight: 700;
+            font-size: 1.5rem;
+        }
+        .cover {
+            /* border: green 1px solid; */
+            display: flex;
+            padding: 0.5rem 0;
+            align-items: center;
+            .cash {
+                font-weight: 700;
+                font-size: 2rem;
+            }
+            .text {
+                /* border: 1px red solid; */
+                font-weight: 400;
+                padding: 0 0 0 0.7rem;
+            }
+        }
+        p {
+            padding: 1rem 0;
+        }
+    }
+    button {
+        background: hsl(71, 73%, 54%);
+        width: 100%;
+        padding: 1rem 0;
+        border-radius: 5px;
+        font-weight: 700;
+        font-size: 1.2rem;
+        color: white;
+        cursor: pointer;
+    }
+
+    .left {
+        border-radius: 0px 0px 10px 0;
+        background: rgb(72, 209, 204);
+        h3 {
+            font-weight: 700;
+            color: white;
+            font-size: 1.5rem;
+            padding: 1rem 0;
+        }
+        p {
+            padding: 0 5rem 1rem 0;
+            line-height: 1.5rem;
+            color: white;
+        }
+    }
+}
+
+
+
+.content {
+    padding: 3rem;
+        @media screen and (min-width: 1280px) {
+        width: 56%;
+    }
+    .bottom{
+        @media screen and (min-width: 1280px) {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+        .right{
+            padding: 1rem 3rem;
+            padding-bottom: 4rem; 
+        }
+        .left{
+            padding:0 3rem;
+        }
+
+    }
+
+}
